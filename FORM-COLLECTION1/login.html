@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #ad5389; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #3c1053,
+          #ad5389
+        ); 
+        background: linear-gradient(
+          to right,
+          #3c1053,
+          #ad5389
+        ); 
+        padding: 10px;
+      }
+     
+      .container{
+        max-width: 700px;
+        width: 100%;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+      }
+
+      .container .header{
+        position: relative;
+        font-size: 18px;
+        font-weight: 500px; 
+         color: purple;
+         font-family: sans-serif;
+         text-transform: uppercase;
+         text-align: center;
+      }
+
+      .container .header::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        content: '';
+
+      }
+
+      .container .form .user-detail{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .container .form .user-detail .input-filed{
+        margin: 15px 0 12px 0;
+         width:  calc(100% / 2 - 20px);
+      }
+
+      .container .form .user-detail .input-filed input{
+        width: 100%;
+        padding: 8px;
+      }
+
+      
+      .container .form .user-detail .input-filed span{
+      margin-bottom: 5px;
+      display: block;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 600px;
+      color: black;
+      }
+
+      .container .form .user-detail .input-filed input{
+        border: none;
+        border: 1px solid gray;
+        border-radius: 2px;
+        font-size: 16px;
+        color: black;
+        width: 100%;
+        transition: all 0.3s ease;
+        border-bottom-width: 2px;
+      }
+
+      .container .form .user-detail .input-filed input:focus,
+      .container .form .user-detail .input-filed input:valid{
+        border-color: green;
+      }
+
+      .link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .link1{
+        text-decoration: none;
+        font-size: 14px;
+        color: #3c1053;
+        font-weight: 500;
+        text-transform:capitalize;
+       
+      }
+
+      
+      #link1{
+        text-decoration: none;
+        font-size: 14px;
+        color: #3c1053;
+        font-weight: 500;
+      
+      }
+
+      .container .form .btn input{
+        width: 100%;
+        padding: 6px;
+        background: #ad5389; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #3c1053,
+          #ad5389
+        ); 
+        background: linear-gradient(
+          to right,
+          #3c1053,
+          #ad5389
+        ); 
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container" >
+      <div class="header">
+        <h2>Login form</h2>
+      </div>
+        <div class="form">
+          <div class="user-detail">
+            <div class="input-filed">
+              <span>Email</span>
+              <input type="email" placeholder="Someone@gmail.com#." required />
+            </div>
+            <div class="input-filed">
+              <span>Password</span>
+              <input type="password" placeholder="******* Min 6 Char" required />
+            </div>
+          </div>
+          <div class="link">
+          <div><a href="forget-password.html" class="link1">Forget-Password</a></div>
+          <label for="remember" id="link1"><input type="checkbox" id="remember">Remember-Me</label>
+          </div>
+
+          <!-- <div class="category">
+            <label for="male"><input type="checkbox" id="male" />Male</label>
+            <label for="female"><input type="checkbox" id="female" />Female</label >
+            <label for="other"><input type="checkbox" id="other" />Other</label>
+          </div> -->
+
+          <div class="btn">
+            <input type="button" class="btn1" value="Login">
+          </div>
+
+          <div class="link3">
+            <div  style="text-align: center;"><a href="signup.html" class="link1">do you have an account ? click here #</a></div>
+          </div>
+        </div>
+     
+    </div>
+  </body>
+</html>

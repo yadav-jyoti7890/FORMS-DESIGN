@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+     
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background-color: #f1f2f6;
+        background: #544a7d; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #ffd452,
+          #544a7d
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #ffd452,
+          #544a7d
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      .container {
+        background-color: #fff;
+        width: 500px;
+        padding: 2%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 4px;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        margin: 10px;
+        border-radius: 3px;
+        border-bottom-color: rgb(221, 221, 23);
+        border-bottom-width: 2px;
+      }
+
+      .up-btn {
+       margin-left: 10px;
+       display: flex;
+      }
+
+    
+
+      #head {
+        padding: 15px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-family: serif;
+      }
+
+      .login {
+        width: 50%;
+        padding: 7px;
+        /* background: #544a7d;
+        background: -webkit-linear-gradient(
+          to right,
+          #ffd452,
+          #544a7d
+        );
+        background: linear-gradient(
+          to right,
+          #ffd452,
+          #544a7d
+        );  */
+
+        color: white;
+        font-size: 21px;
+        font-weight: 500;
+        box-sizing: border-box;
+        border-radius: 3px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        font-family: serif;
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        cursor:pointer;
+        background-color:  #544a7d;
+        text-transform: capitalize;
+        text-decoration: none;
+      }
+
+      .login:hover{
+           background-color: #7357e2;
+           color: #fff;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .navigate{
+        text-align: center;
+        margin-bottom: 10px;
+      }
+   
+      .navigate p{
+        font-family: serif;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+
+      .navigate p a{
+         font-family:serif;
+         font-size: 16px;
+         color:#7357e2;
+         text-decoration: none;
+         text-transform: capitalize;
+       
+      }
+   
+      #forget{
+        padding: 10px;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+
+     .log{
+         width: 50%;
+         border: 1ps solid gray;
+         color: black;
+         text-transform: capitalize;
+         border-radius: 4px;
+         font-size: 19px;
+         font-weight: 500px;
+         padding: 10px;
+         /* border: none; */
+         box-sizing: border-box;
+         margin: 10px;
+     }
+
+     .log:hover{
+      background-color: #544a7d;
+      color: white;
+     }
+    
+     .btn1{
+        width: 25%;
+        background-color: #544a7d;
+        color: white;
+        padding: 7px;
+        text-align: center;
+        border-radius: 3px;
+        margin: 5px;
+     }
+
+     .btn1 a{
+        width: 25%;
+        background-color: #544a7d;
+        color: white;
+        padding: 7px;   
+     }
+
+
+     .btn2{
+        width: 25%;
+        padding: 7px;
+        border: 1px solid gray;
+        border-radius: 3px;
+        text-align: center;
+        margin: 5px;
+     }
+
+     .btn2 a:hover{
+        width: 25%;
+        background-color: #544a7d;
+       color: white;
+     }
+
+     .btn2:hover{
+        width: 25%;
+        background-color: #544a7d;
+        color: white;
+     }
+
+    
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="head">login form</h2>
+      <div class="up-btn">
+        <div class="btn1"><a href="" class="a">signup</a></div> 
+         <div class="btn2"><a href="login.html" class="b">Login</a></div>
+      </div>
+
+      <div class="form">
+        <form action="">
+          <input type="text" placeholder="Enter Full-Name" />
+          <input type="email" placeholder="Email Address #" />
+          <input type="password" placeholder="Password" />
+          <input type="contact" placeholder="contact" />
+          <input type="number" placeholder="Enter Number" />
+          <input type="age" placeholder="Enter Age" />
+          <input type="address" placeholder="address" />
+          <a href="" id="forget">Forger Password</a>
+          <div class="button">
+            <button class="login">login</button>
+          </div>
+
+          <div class="navigate">
+            <p>Not a member ? <a href="login.html"> signup now </a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
