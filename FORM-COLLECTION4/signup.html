@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family:'poppins', sans-serif;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        body{
+            background-color:#e4e9f7;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }
+        .form-box{
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 10px;
+            padding: 15px 15px;
+        }
+
+        .box{
+            width: 500px; 
+             display: flex;
+            flex-direction: column;
+          
+        }
+
+
+        header{
+            font-size: 20px;
+            font-weight: 600;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0px;
+            margin-bottom: 10px;
+        }
+
+        
+        input{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            margin-top:10px;
+            border:none;
+            border-radius:5px;
+            outline:none;
+            background-color: #cccccc5c;  
+            margin-bottom: 15px;  
+        }
+
+        .same{
+            margin-left:5px;
+        }
+
+        #btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(148, 29, 246);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: capitalize;
+            border:none;
+            outline:none;
+            cursor:pointer;
+          
+        }
+
+        .navigate{
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            /* font-size: 18px; */
+        }
+
+        .signup{
+            color: rgb(148, 29, 246);
+            white-space: #fff;
+            font-weight: 600;
+        }
+
+        /* input:focus, */
+        input:valid{
+            background-color: green;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box box">
+            <header>sign-up</header>
+            <div class="input-filed">
+                <label for="fname"  class="same">Full Name</label>
+                <input type="text" name="name" placeholder="Enter Full Name" id="fname" required>
+            </div>
+            <div class="input-filed">
+                <label for="uname"  class="same">UserName</label>
+                <input type="text" placeholder="Enter User Name" id="uname" name="username" required>
+            </div>
+            <div class="input-filed">
+                <label for="email"  class="same">Email</label>
+                <input type="email" placeholder="Enter User Name" id="email" name="email" required>
+            </div>
+            <div class="input-filed"  class="same">
+                <label for="password">password</label>
+                <input type="password" placeholder="Enter User Name" id="password" name="password" required minlength="6" maxlength="6">
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="sign-up" id="btn">
+            </div>
+
+            <div class="navigate">
+                already you have an account ? <a href="signin.html" class="signup">sign-in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+
+      .form-box {
+        /* background-color: rgb(31, 109, 176); */
+        width: 500px;
+        padding: 25px 25px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+          rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        border-radius: 8px;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      header {
+        font-size: 18px;
+        font-weight: 600;
+        /* margin-left: 5px; */
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      /* 
+        .btn1{
+            border: none;
+            outline: none;
+            width: 50%;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-align: center;
+        } */
+      .btn {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .btn1 {
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        background-color: #eee;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        border-radius: 8px;
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      
+      .link{
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .link1{
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+      }
+
+      input:invalid{
+        border-bottom: 2px solid red;
+      }
+
+      input:valid{
+        border-bottom: 2px solid green;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <header>create account</header>
+        <form action="">
+          <div class="input-filed">
+            <input
+              type="text"
+              placeholder="Enter Full Name"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+          <div class="input-filed">
+            <input
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="input-filed">
+            <input
+              type="password"
+              placeholder="Enter password"
+              name="password"
+              id="password"
+              required
+              minlength="6"
+              maxlength="6"
+            />
+          </div>
+          <div class="input-filed">
+            <input type="number" placeholder="Enter Age" name="age" id="age" required minlength="2" />
+          </div>
+          <div class="input-filed">
+            <input
+              type="number"
+              placeholder="Enter Contact"
+              name="contact"
+              id="contact"
+              required
+              minlength="6"
+              maxlength="6"
+            />
+          </div>
+          <div class="input-filed">
+            <input
+              type="text"
+              placeholder="Enter Address"
+              name="address"
+              id="address"
+              required
+            />
+          </div>
+          <div class="btn">
+            <input type="button" value="sign-up" class="btn1" />
+          </div>
+
+          <div class="link">
+            Do you have any account ? <a href="signin.html" class="link1">sign-in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

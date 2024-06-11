@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+        text-decoration: none;
+      }
+      body {
+        background-color: #e4e9f7;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+      }
+
+      .box {
+        background-color: #fff;
+        padding: 15px 15px;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+
+      .form-box {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 0px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+      }
+
+      input {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        margin-top:10px;
+        border: none;
+        outline: none;
+        background-color: #eee;
+        border-radius:5px;
+        color: #000;
+        text-transform: capitalize;
+      }
+
+      .input-filed{
+       margin-bottom: 15px;
+      }
+
+      .label{
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        /* letter-spacing: 1px; */
+        margin-left: 5px;
+      }
+
+      .btn{
+        background-color:rgb(148, 29, 246);
+        text-align: center;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size:18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:20px;
+        cursor:pointer;
+      }
+
+      .link{
+        text-align: center;
+        margin: 20px;
+        text-transform: capitalize;
+      }
+
+      #signup{
+        font-weight:600;
+        color: rgb(148, 29, 246);            
+      }
+
+      input:valid{
+        background-color: green;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box box">
+        <header>sign-in</header>
+        <form action="">
+          <div class="input-filed">
+            <label for="username" class="label">UserName</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter Username or email"
+              id="username"
+              required
+            />
+          </div>
+
+          <div class="input-filed">
+            <label for="password"  class="label">password</label>
+            <input type="password" placeholder="Enter Password" id="password" required minlength="6" maxlength="6"/>
+          </div>
+
+          <div class="link1">
+            <input type="button" value="sign in"  class="btn"/>
+          </div>
+
+          <div class="link">not a member ? <a href="signup.html" id="signup">signup</a></div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

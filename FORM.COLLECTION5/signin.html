@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+    -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+        background-color: #fff;
+        /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .box{
+            width: 500px;
+            border-radius:5px solid #fff;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+            padding: 25px 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-box{
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            font-size: 18px;
+            font-weight: 600;
+            /* margin-left: 5px; */ 
+        }
+
+        p{
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            /* padding: 10px; */
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #user{
+            margin-top: 15px;
+        }
+
+        .btn{
+            text-align: center;
+            margin: 10px;
+        }
+
+        button{
+            padding: 10px;
+            width: 50%;
+            border: none;
+            outline: none;
+            background-color:#eee;
+            /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+            /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        
+        .aaa{
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width:20%;
+            margin: 0 auto;
+            background-color: rgb(0, 204, 255);
+            color: white;
+            font-size: 20px;
+            border-color: 1px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        input:invalid,input:focus-visible{
+            border-bottom: 2px solid red;
+            border-color: red;
+        }
+
+        input:valid{
+            border-bottom: 2px solid green;
+        }
+
+        .link{
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .link1{
+            font-size: 15px;
+            font-weight: 600;
+            color: black;
+        }
+
+
+
+     
+        /* button:valid{
+            background-color: green;
+            color: white;
+        } */
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box box">
+            <header>Hello</header>
+            <p>welcome back</p>
+           
+                <form action="">
+                    <div class="input-filed">     
+                        <!-- <i class="fa-regular fa-user" id="user"></i> -->
+                        <input type="email" name="text" placeholder="Enter Email" id="email" required>
+                    </div>
+                    <div class="input-filed">
+                        <!-- <i class="fa-solid fa-unlock-keyhole" id="password"></i> -->
+                        <input type="password" name="text" placeholder="Enter Email" required minlength="6" maxlength="6">
+                    </div>
+
+                   
+                    <div class="btn">
+                       <button>Log in</button>
+                    </div>
+
+                    <div class="aaa">
+                        <!-- <p>OR</p> -->
+                        <div class="center"><i class="fa-solid fa-fingerprint"></i></div>
+                    </div>
+
+                    <!-- <div class="link">
+                        <label for="in"><input type="checkbox" id="in">Keep me logged in</label>
+                    </div> -->
+
+                    <div class="link">
+                        not a member ? <a href="signup.html" class="link1">sign-up</a>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+ 
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+        text-transform: capitalize;
+      }
+
+      body {
+        background-color: #f1f2f6;
+      }
+
+      #col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      #r {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        width: 850px;
+        padding: 10px;
+      }
+
+      img {
+        width: 380px;
+      }
+
+      #b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: indigo;
+        border-radius: 8px;
+      }
+
+      .content {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #bbb {
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      #bbb .ccc {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      input {
+        margin-top: 10px;
+      }
+
+      .signup {
+        width: 250px;
+        margin-top: 20px;
+        background-color: indigo;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        padding: 8px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .sss{
+        margin: 0 auto;
+      }
+
+      .link{
+        text-align: center;
+        margin: 20px;
+      font-size: 15px;
+      }
+
+      .link2{
+        font-weight: 600;
+      }
+
+      .additional{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 10px;
+      }
+
+      .remember-me{
+        margin-top: 10px;
+        font-weight: 500;
+      }
+
+      .forget-password{
+        margin-top: 10px;
+      }
+    
+      .eee{
+        margin-top: -15px;
+        border-bottom: 1px solid #999;
+        color: indigo;
+        padding: 10px 0;
+      }
+
+      input:valid{
+        border-color: green;
+      }
+
+
+  
+    </style>
+  </head>
+  <body>
+    <div class="container" id="col">
+      <div class="row" id="r">
+
+        <div class="col-md-6 left-box" id="b">
+          <div class="img-box">
+            <img src="image/signup2.jpg" alt="" class="img-fluid" />
+          </div>
+
+          <!-- <div class="content">
+            <p class="p">be verified</p>
+            <small class="small"
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</small
+            >
+          </div> -->
+        </div>
+
+        <div class="col-md-6 right-box">
+          <div class="row" id="bbb">
+            <div class="header-text mb-4" id="bbb">
+              <p class="ccc">Hello, Again</p>
+              <p class="eee">we are happy to have you back..!</p>
+            </div>
+
+            <div class="input-groud">
+              <input
+                type="email"
+                name="name"
+                placeholder="Enter Email"
+                class="form-control form-control-lg bg-light"
+              />
+            </div>
+
+            <div class="input-groud">
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                class="form-control form-control-lg bg-light"
+                required minlength="8"
+                maxlength="8"
+              />
+            </div>
+
+            <div class="additional">
+              <label for="remember-me" class="remember-me"><input type="checkbox" id="remember-me">Remember-Me</label>
+             <a href="" class="Forget-Password">Forget-Password</a>
+            </div>
+
+              <div class="input-group sss">
+                <button class="w-100 fs-6 signup">signup</button>
+              </div>
+
+              <div class="link">
+                 not a member ? <a href="signup.html" class="link2">Signup</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
